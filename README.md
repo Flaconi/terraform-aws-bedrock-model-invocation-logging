@@ -18,7 +18,7 @@ Terraform module for Amazon Bedrock Agent resources
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.94 |
 
 <!-- TFDOCS_PROVIDER_END -->
 
@@ -28,6 +28,7 @@ Terraform module for Amazon Bedrock Agent resources
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.94 |
 
 <!-- TFDOCS_REQUIREMENTS_END -->
 
@@ -65,6 +66,14 @@ Default: `false`
 ### <a name="input_text_data_delivery_enabled"></a> [text\_data\_delivery\_enabled](#input\_text\_data\_delivery\_enabled)
 
 Description: Indicates whether text data delivery is enabled.
+
+Type: `bool`
+
+Default: `false`
+
+### <a name="input_video_data_delivery_enabled"></a> [video\_data\_delivery\_enabled](#input\_video\_data\_delivery\_enabled)
+
+Description: Indicates whether video data delivery is enabled.
 
 Type: `bool`
 
