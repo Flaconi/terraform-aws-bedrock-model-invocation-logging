@@ -45,6 +45,7 @@ resource "aws_bedrock_model_invocation_logging_configuration" "this" {
     embedding_data_delivery_enabled = var.embedding_data_delivery_enabled
     image_data_delivery_enabled     = var.image_data_delivery_enabled
     text_data_delivery_enabled      = var.text_data_delivery_enabled
+    video_data_delivery_enabled     = var.video_data_delivery_enabled
     s3_config {
       bucket_name = aws_s3_bucket.this.id
       key_prefix  = var.key_prefix

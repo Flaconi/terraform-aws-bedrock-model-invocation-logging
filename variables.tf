@@ -21,6 +21,12 @@ variable "text_data_delivery_enabled" {
   default     = false
 }
 
+variable "video_data_delivery_enabled" {
+  description = "Indicates whether video data delivery is enabled."
+  type        = bool
+  default     = false
+}
+
 variable "key_prefix" {
   description = "The key prefix for logging configuration in S3."
   type        = string
