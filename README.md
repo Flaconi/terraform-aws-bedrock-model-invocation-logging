@@ -5,6 +5,7 @@ Terraform module for Amazon Bedrock Agent resources
 [![lint](https://github.com/flaconi/terraform-aws-bedrock-model-invocation-logging/workflows/lint/badge.svg)](https://github.com/flaconi/terraform-aws-bedrock-model-invocation-logging/actions?query=workflow%3Alint)
 [![test](https://github.com/flaconi/terraform-aws-bedrock-model-invocation-logging/workflows/test/badge.svg)](https://github.com/flaconi/terraform-aws-bedrock-model-invocation-logging/actions?query=workflow%3Atest)
 [![Tag](https://img.shields.io/github/tag/flaconi/terraform-aws-bedrock-model-invocation-logging.svg)](https://github.com/flaconi/terraform-aws-bedrock-model-invocation-logging/releases)
+[![Terraform](https://img.shields.io/badge/Terraform--registry-aws--bedrock--model--invocation--logging-brightgreen.svg)](https://registry.terraform.io/modules/Flaconi/bedrock-model-invocation-logging/aws/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
