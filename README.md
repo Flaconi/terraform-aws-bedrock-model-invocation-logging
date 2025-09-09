@@ -18,7 +18,7 @@ Terraform module for Amazon Bedrock Agent resources
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.94 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 6.0 |
 
 <!-- TFDOCS_PROVIDER_END -->
 
@@ -28,7 +28,7 @@ Terraform module for Amazon Bedrock Agent resources
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.94 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 6.0 |
 
 <!-- TFDOCS_REQUIREMENTS_END -->
 
