@@ -5,35 +5,8 @@ resource "aws_s3_bucket" "this" {
 }
 
 resource "aws_s3_bucket_policy" "this" {
-  bucket = aws_s3_bucket.this.bucket
-
-  policy = <<EOF
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Principal": {
-        "Service": "bedrock.amazonaws.com"
-      },
-      "Action": [
-        "s3:*"
-      ],
-      "Resource": [
-        "${aws_s3_bucket.this.arn}/*"
-      ],
-      "Condition": {
-        "StringEquals": {
-          "aws:SourceAccount": "${data.aws_caller_identity.this.account_id}"
-        },
-        "ArnLike": {
-          "aws:SourceArn": "arn:aws:bedrock:${data.aws_region.this.name}:${data.aws_caller_identity.this.account_id}:*"
-        }
-      }
-    }
-  ]
-}
-EOF
+  bucket = aws_s3_bucket.this.id
+  policy = data.aws_iam_policy_document.this.json
 }
 
 resource "aws_bedrock_model_invocation_logging_configuration" "this" {
